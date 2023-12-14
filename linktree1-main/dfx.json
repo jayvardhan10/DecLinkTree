@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "hello": {
+      "main": "backend/service/Hello.mo",
+      "type": "motoko",
+      "declarations": {
+        "node_compatibility": true
+      }
+    },
+    "image": {
+      "main": "backend/service/Image.mo",
+      "type": "motoko",
+      "declarations": {
+        "node_compatibility": true
+      }
+    },
+    "hello_assets": {
+      "frontend": {
+        "entrypoint": "out/index.html"
+      },
+      "source": ["out"],
+      "type": "assets"
+    }
+  },
+  "dfx": "0.15.1",
+  "version": 1
+}
